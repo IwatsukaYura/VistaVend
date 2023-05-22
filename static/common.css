@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+RESET CSS
+
+html5doctor.com Reset Stylesheet
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:where([hidden]:not([hidden='until-found'])){display:none!important}:where(html){-webkit-text-size-adjust:none;color-scheme:dark light}@supports not (min-block-size:100dvb){:where(html){block-size:100%}}@media (prefers-reduced-motion:no-preference){:where(html:focus-within){scroll-behavior:smooth}}:where(body){block-size:100%;block-size:100dvb;line-height:1.5;font-family:system-ui,sans-serif;-webkit-font-smoothing:antialiased}:where(input,button,textarea,select){font:inherit;color:inherit}:where(textarea){resize:vertical;resize:block}:where(button,label,select,summary,[role='button'],[role='option']){cursor:pointer}:where(:disabled){cursor:not-allowed}:where(label:has(>input:disabled),label:has(+input:disabled)){cursor:not-allowed}:where(button){border-style:solid}:where(a){text-underline-offset:.2ex}:where(ul,ol){list-style:none}:where(img,svg,video,canvas,audio,iframe,embed,object){display:block}:where(img,picture,svg){max-inline-size:100%;block-size:auto}:where(p,h1,h2,h3,h4,h5,h6){overflow-wrap:break-word}:where(h1,h2,h3){line-height:calc(1em + 0.5rem)}:where(hr){border:none;border-block-start:1px solid;color:inherit;block-size:0;overflow:visible}:where(:focus-visible){outline:2px solid var(--focus-color,Highlight);outline-offset:2px}:where(.visually-hidden:not(:focus,:active,:focus-within,.not-visually-hidden)){clip-path:inset(50%)!important;height:1px!important;width:1px!important;overflow:hidden!important;position:absolute!important;white-space:nowrap!important;border:0!important}
+
+/* 
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle} */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+common
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+html {-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;text-size-adjust: 100%;font-size: 62.5%;}
+body {font-family: "Noto Sans JP", 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif; margin: 0; padding: 0; font-weight: 400; line-height: 2.0; letter-spacing: 0.05em; background: #000; }
+*,
+*:before,
+*:after { color: #FFF; }
+
+a,a:link, a:visited { text-decoration: none; }
+a:active, a:hover { text-decoration: none; }
+a:-webkit-any-link { cursor: pointer;}
+*:focus {outline: none;}
+
+/*h1, h2, h3, h4, h5 {font-weight: normal;}*/
+li { list-style-type: none; }
+dl,dt,dd { margin: 0; padding: 0; }
+p { margin: 0; padding: 0; line-height: 2.0; font-size: 1.6rem; }
+img {border: 0; line-height: 0; vertical-align: bottom;}
+svg { vertical-align: bottom; }
+hr { display: none; }
+th { text-align: left; font-weight: bold; margin: 0; }
+td { margin: 0; }
+em {font-weight: bold; font-style: normal;}
+form { margin: 0; padding: 0; }
+label { margin: 0; padding: 0;}
+
+a, span, u, b { color: inherit; }
+
+.font_en { font-family: futura-pt-bold, sans-serif; font-weight: 700; font-style: normal; line-height: 1.5; }
+.uppercase { text-transform: uppercase; }
+
+@media screen and (max-width: 900px) {
+	p { margin: 0; padding: 0; line-height: 1.85; font-size: 1.4rem; }
+}
+
+/* clearfix */
+.clearfix::after {content: "";display: table;clear: both;}
